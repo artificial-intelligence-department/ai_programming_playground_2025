@@ -18,7 +18,7 @@ int main() {
     cout << "Enter the number of years: ";
     cin >> t;
 
-    a = p * pow(1 + (r / 100) / n, n * t);
+    a = p * pow(1 + r / n, n * t);
 
     cout << "Final amount (A): " << a << endl;
 
