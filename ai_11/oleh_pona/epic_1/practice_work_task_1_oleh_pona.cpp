@@ -45,8 +45,9 @@ int main() {
 
     double result = calculate(base, annual_rate, num_of_periods, time);
 
-    printf("Total sum:%lf \n", result);
-    printf("Interest earned:%lf \n", result - base);
+    printf("Initial investment:%.2lf \n", base);
+    printf("Final amount:%.2lf \n", result);
+    printf("Interest earned:%.2lf \n", result - base);
 
     return 0;
 }
