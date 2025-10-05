@@ -1,3 +1,4 @@
+//номер завдання: 0754 
 #include<iostream>
 #include<vector>
 
