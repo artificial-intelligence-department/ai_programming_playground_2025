@@ -1,6 +1,8 @@
 #include <iostream>
 #include <cmath>
+
 using namespace std;
+
  int main(){
     
     cout << "Deposited sum: ";
@@ -15,6 +17,11 @@ using namespace std;
     cout << "Amount of time (years): ";
     int time=0;
     cin >> time;
+
+    if(dep<0 || !(0<=rate<=1) || time<0){
+      cout << "Неправильні введені дані" << endl;
+      return 1;
+    }
     
     double final=dep*pow(1+rate, time);
     cout << "Final sum: " << final << endl;
