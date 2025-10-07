@@ -33,20 +33,16 @@ int main()
     printf("Введіть частоту виплат(monthly/quarterly/yearly): ");
     scanf("%19s", rate_of_cashouts);
     
-    if (strcmp(rate_of_cashouts, "monthly") == 0)
-    {
+    if (strcmp(rate_of_cashouts, "monthly") == 0) {
         num_of_cashouts_per_year = 12;
     }
-    else if (strcmp(rate_of_cashouts, "quarterly") == 0)
-    {
+    else if (strcmp(rate_of_cashouts, "quarterly") == 0) {
         num_of_cashouts_per_year = 4;
     }
-    else if (strcmp(rate_of_cashouts, "yearly") == 0)
-    {
+    else if (strcmp(rate_of_cashouts, "yearly") == 0) {
         num_of_cashouts_per_year = 1;
     }
-    else
-    {
+    else {
         printf("Невірний формат частоти виплат, виберіть один з цих: monthly/quarterly/yearly");
         return 1;
     }
