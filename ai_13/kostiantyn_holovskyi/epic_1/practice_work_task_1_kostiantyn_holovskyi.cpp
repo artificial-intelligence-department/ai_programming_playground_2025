@@ -11,6 +11,8 @@ int main(){
     printf("Введіть річну ставку у %%:\n");
     scanf("%f", &annualRate);
     annualRate /= 100;
+    printf("Введіть частоту виплат(12,4,1):\n");
+    scanf("%d", &payout);
     printf("Введіть час інвестиції в роках:\n");
     scanf("%d", &time);
     finalCap =  startCap * pow(1 + annualRate / payout, payout * time);
