@@ -1,37 +1,34 @@
-#include <iostream>
-#include <cmath>
+#include <stdio.h>
+#include <math.h>
 
-using namespace std;
+int main() {
+    int dep = 0;
+    double rate = 0;
+    int time = 0;
 
- int main(){
-    
-   int dep=0;
-   double rate=0;
-   int time=0;
+    printf("Deposited sum: ");
+    scanf("%d", &dep);
 
-   cout << "Deposited sum: ";
-   cin >> dep;
-    
-   cout << "Interest rate (%): ";
-   cin >> rate;
-    
-   cout << "Amount of time (years): ";
-   cin >> time;
+    printf("Interest rate (%%): ");
+    scanf("%lf", &rate);
 
-   if(dep<0 || !(0<=rate<=100) || time<0){
-      cout << "Неправильні введені дані" << endl;
-      return 1;
-   }
+    printf("Amount of time (years): ");
+    scanf("%d", &time);
 
-   rate=rate/100;
-   double final=dep*pow(1+rate, time);
-   cout << "Final sum: " << final << endl;
-   cout << "Profit: " << final-dep << endl;
+    if (dep < 0 || rate < 0 || rate > 100 || time < 0) {
+        printf("Неправильні введені дані\n");
+        return 1;
+    }
 
-   cout << "Payments:" << endl;
-   cout << "Monthly: " << (final-dep)/(time*12) << endl;
-   cout << "Quarterly: " << (final-dep)/(time*4) << endl;
-   cout << "Yearly: " << (final-dep)/time << endl;
-    
-   return 0;
- }
+    rate = rate / 100.0;
+    double final = dep * pow(1 + rate, time);
+    printf("Final sum: %.2f\n", final);
+    printf("Profit: %.2f\n", final - dep);
+
+    printf("Payments:\n");
+    printf("Monthly: %.2f\n", (final - dep) / (time * 12));
+    printf("Quarterly: %.2f\n", (final - dep) / (time * 4));
+    printf("Yearly: %.2f\n", (final - dep) / time);
+
+    return 0;
+}
