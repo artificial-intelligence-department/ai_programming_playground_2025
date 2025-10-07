@@ -5,12 +5,12 @@ using namespace std ;
 int main()  
 {   int n;
     cin >> n;
-    vector <int> a(n); // масив а який містить n цілих чисел
+    vector <int> a(n);
     for (int x = 0; x < n; x ++)
     {   
         cin >> a[x];
     }
-    vector<int> d(n,1); // масив що буде містити всі одиниці довжиною n і буде змінюватись зі збільшенням значення "і"
+    vector<int> d(n,1);
 
     int answer = 0;
     for (int i = 0 ;i < n; i++) 
