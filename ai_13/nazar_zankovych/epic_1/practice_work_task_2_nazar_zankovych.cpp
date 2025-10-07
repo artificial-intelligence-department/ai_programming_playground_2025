@@ -6,9 +6,8 @@
 using namespace std;
 
 int main(){
-    SetConsoleOutputCP(65001);
-    setlocale(LC_ALL, "uk_UA.UTF-8");
-    setlocale(LC_ALL, "uk_UA");
+    SetConsoleOutputCP(65001); // UTF-8
+    SetConsoleCP(65001);
 
     string name;
     int h;
