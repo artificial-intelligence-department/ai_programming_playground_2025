@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <windows.h>
 #include <cmath>
 
 double calculateIncome(double startCapital, float anualRate, int payoutFreq, int duration)
@@ -34,6 +35,9 @@ int main()
   resultCap = calculateIncome(startCapital, anualRate, payoutFreq, duration);
   difference = resultCap - startCapital;
 
-  printf("You invested %.2lf with %.2f%% anual rate and payout every %d month. \nYour investment turned out to %.2lf. \nYou gained %.2lf after %d years of investment.", startCapital, anualRate, payoutFreq, resultCap, difference, duration);
+  printf("You invested %.2lf with %.2f%% anual rate and payout every %d month."
+         " \nYour investment turned out to %.2lf. \nYou gained"
+         " %.2lf after %d years of investment.",
+         startCapital, anualRate, payoutFreq, resultCap, difference, duration);
   return 0;
 }
