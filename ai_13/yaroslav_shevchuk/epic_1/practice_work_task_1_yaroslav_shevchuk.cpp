@@ -19,7 +19,6 @@ int main()
 
   printf("Enter anual rate in %%:");
   scanf("%f", &anualRate);
-  anualRate /= 100;
 
   printf("Enter payout frequency(12,4,1):");
   scanf("%d", &payoutFreq);
@@ -32,7 +31,7 @@ int main()
   printf("Enter duration of the investment in years:");
   scanf("%d", &duration);
 
-  resultCap = calculateIncome(startCapital, anualRate, payoutFreq, duration);
+  resultCap = calculateIncome(startCapital, anualRate / 100, payoutFreq, duration);
   difference = resultCap - startCapital;
 
   printf("You invested %.2lf with %.2f%% anual rate and payout every %d month."
