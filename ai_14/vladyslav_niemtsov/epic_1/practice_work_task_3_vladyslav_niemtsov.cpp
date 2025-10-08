@@ -1,5 +1,5 @@
 #include <cstdio>   
-#include <cmath>    // для pow()
+#include <cmath>    //для pow()
 
 int main() {
     double P, r, A;  // основна сума, річна ставка, кінцева сума
