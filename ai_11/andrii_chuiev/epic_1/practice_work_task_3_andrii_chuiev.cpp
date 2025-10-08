@@ -18,7 +18,7 @@ int main() {
     
     V=Vo*pow((1+p/100),t);
     cout << "Zrostannia (float): " << fixed << setprecision(2) << V << endl;
-    cout << "Prohnoz perehliadiv cherez " << t << " dniv: " << int(V) << endl;
+    cout << "Prohnoz perehliadiv cherez " << t << " dniv: " << int(round(V)) << endl;
 
     return 0;
 }

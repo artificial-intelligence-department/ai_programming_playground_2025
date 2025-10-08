@@ -9,7 +9,7 @@ int main() {
     int n;
     double x;
     cin >> name >> n >> x;
-    cout<<"Pratsivnyk "<< name <<" otrymav zarplatu: "<< fixed << setprecision(2) <<x*n << "grn" << endl;
+    cout<<"Pratsivnyk "<< name <<" otrymav zarplatu: "<< fixed << setprecision(2) <<x*n << " grn" << endl;
 
     return 0;
 }
