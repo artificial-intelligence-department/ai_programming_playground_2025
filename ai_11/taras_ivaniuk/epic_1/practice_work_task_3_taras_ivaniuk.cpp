@@ -1,23 +1,19 @@
 #include <iostream>
+#include <cstdio>   // для printf і scanf
 #include <cmath>
 using namespace std;
-
 int main() {
     double V0, p; 
     int t;        
     double total_views;
-
-    cout << "Enter the initial number of views: ";
-    cin >> V0;
-    cout << "Enter the daily growth rate (in %): ";
-    cin >> p;
-    cout << "Enter the number of days after which you want to know the expected views: ";
-    cin >> t;
-
-    total_views = V0 * pow(1 + p/100.0, t);
-
-    cout << "Increase in views: " << total_views - V0 << endl;
-    cout << "Predicted views after " << t << " days: " << total_views << endl;
-
+    printf("Enter the initial number of views: ");
+    scanf("%lf", &V0);
+    printf("Enter the daily growth rate (in %%): ");
+    scanf("%lf", &p);
+    printf("Enter the number of days after which you want to know the expected views: ");
+    scanf("%d", &t);
+    total_views = V0 * pow(1 + p / 100.0, t);
+    printf("Increase in views: %.2lf\n", total_views - V0);
+    printf("Predicted views after %d days: %.2lf\n", t, total_views);
     return 0;
 }

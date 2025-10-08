@@ -1,21 +1,17 @@
 #include <iostream>
+#include <cstdio>
 using namespace std;
-
 int main() {
-    string name;
+    char name[100];
     int hours;
     float rate, salary;
-
-    cout << "Enter employee name: ";
-    getline(cin, name);
-    cout << "Enter number of hours worked: ";
-    cin >> hours;
-    cout << "Enter hourly rate: ";
-    cin >> rate;
-
+    printf("Enter employee name: ");
+    scanf(" %[^\n]", name);
+    printf("Enter number of hours worked: ");
+    scanf("%d", &hours);
+    printf("Enter hourly rate: ");
+    scanf("%f", &rate);
     salary = hours * rate;
-
-    cout << "Employee " << name << " earned a salary of: " << salary;
-
+    printf("Employee %s earned a salary of: %.2f\n", name, salary);
     return 0;
 }
