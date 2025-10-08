@@ -9,5 +9,5 @@ int main() {
 
     cin >> name >> hours >> stavka;
     
-    cout << "працівник " << name << " отримав зарплату " << hours*stavka << " ГРН";
+    cout << "працівник " << name << " отримав зарплату " << hours*stavka << " ГРН" << endl;
 }
