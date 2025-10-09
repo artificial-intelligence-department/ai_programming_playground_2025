@@ -1,18 +1,6 @@
 # VS Code settings
 .vscode/
 
-# Build directories
-build/
-out/
-bin/
-Debug/
-Release/
-
-# CMake files
-CMakeFiles/
-CMakeCache.txt
-cmake_install.cmake
-Makefile
 
 # Compiled object files
 *.o
@@ -22,19 +10,3 @@ Makefile
 *.lib
 *.pdb
 
-# Temporary files
-*.log
-*.tmp
-*.user
-*.suo
-
-# System files
-.DS_Store
-Thumbs.db
-
-# Backup files
-*~
-*.bak
-
-# Ignore generated files
-*.generated.*
