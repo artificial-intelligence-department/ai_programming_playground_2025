@@ -23,9 +23,8 @@ r = r / 100;
 
 printf("Number of interest accruals per year(1,4,12):");
 scanf("%d", &n);
-if(n == 1 || n == 4 || n == 12) {}
+if(!(n == 1 || n == 4 || n == 12)) {
 
-else{
      printf("Invalid input");
 return 0;
 }
