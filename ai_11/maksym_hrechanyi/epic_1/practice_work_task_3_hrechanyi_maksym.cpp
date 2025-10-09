@@ -5,7 +5,7 @@ using namespace std;
 
 int main(){
 
-    int V0, V_t;
+    int V0;
     cout << "Початкова кількість переглядів: ";
     cin >> V0;
 
@@ -19,7 +19,7 @@ int main(){
 
     Vt = V0*pow(1 + p/100, t);
     cout << "Зростання: " << Vt << endl;
-    int V_int = Vt;
+    int V_int = round (Vt);
     cout << "Прогнозована кількість переглядів: " << V_int; 
     
     return 0;
