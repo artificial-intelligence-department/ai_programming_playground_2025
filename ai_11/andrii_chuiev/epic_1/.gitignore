@@ -1,0 +1,19 @@
+# Ignore build/exe files
+*.exe
+*.out
+*.o
+
+# Ignore temp files
+tempCodeRunnerFile.*
+epic-1-task/
+
+# Word temporary files
+~$*
+
+# Office backup and autosave files
+*.tmp
+*.bak
+*.wbk
+
+# Other editor caches
+.vscode/
