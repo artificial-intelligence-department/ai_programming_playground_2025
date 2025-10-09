@@ -6,7 +6,7 @@ using namespace std;
 int main(){
     setlocale (LC_ALL, "uk_UA");
     int v0,t,p;
-     vt, increase;
+     float vt, increase;
     printf("Введіть початкову кількість переглядів:");
     scanf("%d", &v0);
 
