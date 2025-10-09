@@ -6,7 +6,7 @@ int main() {
     int n;
     printf("Enter the initial amount (P): ");
     scanf("%lf", &P);
-    printf("Enter the annual interest rate (in percent): ");
+    printf("Enter the annual interest rate: ");
     scanf("%lf", &r);
     printf("Enter the number of years: ");
     scanf("%lf", &t);
