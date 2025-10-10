@@ -24,7 +24,7 @@ int main () {
     scanf("%d", &choice);
 
     if (choice == 1) n = 12;
-    else if (choice == 2) n = 3;
+    else if (choice == 2) n = 4;
     else if (choice == 3) n = 1;
     else {
         printf("Неправильний вибір!\n");
