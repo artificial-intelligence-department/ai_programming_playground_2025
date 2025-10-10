@@ -1,11 +1,14 @@
 #include <iostream>
-#include <cmath>
-using namespace std;
 
 int main() {
     int a, b;
-    cout << "Введіть два числа: ";
-    cin >> a >> b;
-    cout << "Їхня сума: " << a + b << endl;
+    
+    
+    if (!(std::cin >> a >> b)) {
+        return 1;
+    }
+    
+    std::cout << a + b << std::endl;
+    
     return 0;
 }
