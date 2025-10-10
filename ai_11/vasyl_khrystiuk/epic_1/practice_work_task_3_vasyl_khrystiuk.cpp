@@ -19,6 +19,6 @@ int main() {
  V = V_0 * pow(1 + p/100, t);
 
  cout << "Increment: " << V;
- cout << "\nAnticipated amount of views in 10 days: " << round(V);
+ cout << "\nAnticipated amount of views in " << t << " days: " << round(V);
  return 0;
 }
