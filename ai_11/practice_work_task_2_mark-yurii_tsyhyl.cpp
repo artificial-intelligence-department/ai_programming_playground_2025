@@ -3,8 +3,8 @@
 #include <windows.h>
 int main(){
 
-    SetConsoleOutputCP(65001);
-    SetConsoleCP(65001);
+    SetConsoleOutputCP(CP_UTF8);
+    SetConsoleCP(CP_UTF8);
 
     std::string name;
     int hours;
