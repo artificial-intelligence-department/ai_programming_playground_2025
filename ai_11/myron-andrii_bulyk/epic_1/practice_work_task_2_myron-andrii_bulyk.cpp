@@ -9,14 +9,14 @@ int main() {
     string name;
     int hours;
     double rate;
-	cout <<  "Введіть ім'я працівника, кількість відпрацьованих годин та погодинну ставку: ";
+	cout <<  "Enter the employee's name, number of hours worked, and hourly rate.: ";
     cin >> name >> hours >> rate;
 
 
     double salary = hours * rate;
 
-    cout << "Працівник " << name << " отримав зарплату: ";
-    cout << fixed << setprecision(2) << salary << " грн" << endl;
+    cout << "Employee " << name << " received salary: ";
+    cout << fixed << setprecision(2) << salary << " UAH:" << endl;
 
     return 0;
 }

@@ -1,17 +1,15 @@
 #include <iostream>
-#include <windows.h>
 #include <iomanip>
 
 using namespace std;
 float totalViews(int V0, int p, int t);
 int main() {
-	SetConsoleOutputCP(1251);
 	int V0, p, t;
-	cout << "Введіть початкову кількість переглядів (V0), відсоток зростання в день (p) та кількість днів (t): ";
+	cout << "Enter the initial number of views (V0), the percentage increase per day (p), and the number of days (t): ";
 	cin >> V0 >> p >> t;
 	float result =totalViews(V0, p, t);
-	cout << "Зростання (float): " << fixed << setprecision(2) << result << endl;
-	cout << "Прогноз переглядів через " << t << " днів: " << setprecision(0) << result << endl;
+	cout << "Increasing (float): " << fixed << setprecision(2) << result << endl;
+	cout << "View forecast in " << t << " days: " << setprecision(0) << result << endl;
 	return 0;
 
 }
