@@ -1,7 +1,10 @@
 #include <iostream>
 #include <cmath>
-
+#include <windows.h>
 int main(){
+
+    SetConsoleOutputCP(65001);
+    SetConsoleCP(65001);
 
     std::string name;
     int hours;
