@@ -1,0 +1,36 @@
+#include <iostream>
+using namespace std;
+#include <vector>
+#include <algorithm>
+#include <cmath>
+
+
+int main () {
+    int n ; //кількість друзів
+    cin >> n; //зчитуємо n
+    vector <int> a (n),b(n),c(n); //створюємо вектор для зберігання кількості грамів борщу, картоплі і салату
+    for (int i = 0; i < n; i++) { //створюємо цикл, який зчитує кожне замовлення від друзів
+        cin >> a[i] >> b [i] >> c[i];
+    }
+    // сортуємо медіани
+    sort(a.begin(), a.end());
+    sort(b.begin(), b.end());
+    sort(c.begin(), c.end());
+
+    int A = a[n/2]; // медіана для борщу
+    int B = b[n/2]; // медіана для картоплі
+    int C = c[n/2]; // медіана для салату
+
+    // Обчислюємо сумарний ступінь недовіри
+    long long total_dist = 0;
+    for (int i = 0; i < n; i++) {
+        // Додаємо абсолютні відхилення для кожного друга
+        total_dist += abs(a[i] - A); // Недовіра від борщу
+        total_dist += abs(b[i] - B); // Недовіра від картоплі
+        total_dist += abs(c[i] - C); // Недовіра від салату
+    }
+    
+    cout << total_dist << endl;
+    
+    return 0;
+}
